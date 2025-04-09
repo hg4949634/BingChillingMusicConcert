@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=40acfae6ce9352fc35116322141156c2"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Welcome.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header_left" onclick="Gotomain()">C.O.N.C.E.R.T.</div>
+        <div class="header_right">
+            <div class="header_right_introducebtn" onclick="GotoI()" href="#introduce">음악회소개</div>
+            <div class="header_right_playlistbtn" onclick="GotoP()" href="#playlist">플레이리스트</div>
+            <div class="header_right_mapbtn" onclick="GotoM()" href="#map">오시는길</div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="middle_main_area">
+            <div class="middle_main_left">
+                <img class="Violin" src="/Violinist.png" alt="ExpressPNG">
+            </div>
+            <div class="middle_main_right">
+                <div class="Express_who">주최 : 집에서의 한사람</div>
+                <div class="Express_donate">후원 : SmartThings</div>
+            </div>
+        </div>
+        <div class="middle_introduce_area" id="introduce" name="introduce">
+            <div class="middle_introduce_title">음악회의 인사말 : Intro</div>
+            <div class="middle_introduce_about">보통 뮤직 콘서트나 음악회라고 한다면 고급스러운 음악회장이나 전문적인 콘서트장에서 개최하는 매우 수준 높은 음악회를 떠올리고는 한다. 이러한 음악회에서는 자동적으로 관객과 연주자들에게 최적화된 환경과 음악에 심취하기 좋은 환경을 만들고자 한다. 이러한 환경을 만들기 위해서는 많은 노력이 소모되고는 하지만, IoT 기술을 활용한다면 이러한 환경 조성 전문가 없이도 방구석에 누워서 혼자 휴대폰만 만지고 있는 사람도 쉽게 음악에 심취할 수 있도록 음량 조절, 습도 조절 같은 환경을 조성함으로써 작은 음악회를 열어 음악회뿐만 아니라 혼자서 모든 환경을 조성해야하는 일상생활에서 자동적인 시스템을 구성하여 더 나은 일상생활이 가능하다는 것을 전파하기 위하여 이러한 간단한 음악회를 구성하게 되었다. 또한 음악회의 1부와 2부를 최대한 편안하고 잔잔한 클래식 음악으로 구성하여 미래에는 더 자동화된 여유로운 삶이 가능하다는 것을 표현하기 위하여 음악 내용을 구성하였다. 
+            </div>
+            <div class="middle_introduce_img">
+                <img src="/IoTExpress.png" alt="ExpressPNG">
+            </div>
+        </div>
+        <div class="middle_playlist_area" name="playlist">
+            <div class="middle_playlist_title">Playlists</div>
+            <div class="middle_playlist_box">
+                <div class="middle_playlist_divide">
+                    <div class="middle_playlist_dividebtn selected" id="first">1부</div>
+                    <div class="middle_playlist_dividebtn" id="second">2부</div>
+                </div>
+                <div class="middle_playlist_playlist">
+                    <div class="middle_playlist_playlist play1" id="listtitle">
+                        <p></p>
+                    </div>
+                    <div class="middle_playlist_playlist play2">
+                        <p></p>
+                    </div>
+                    <div class="middle_playlist_playlist play3">
+                        <p></p>
+                    </div>
+                    <div class="middle_playlist_playlist play4">
+                        <p></p>
+                    </div>
+                    <div class="middle_playlist_playlist play5">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle_map_area" name="map">
+            <div class="middle_map_title">오시는 길</div>
+            <div id="map" class="middle_map_body"></div>
+            <div class="middle_map_under">
+                <p>송도 더프라우 3단지 아파트</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>31125 이준 제작</p>
+    </div>
+</body>
+<script src="/Welcome.js"></script>
+</html>
